@@ -138,7 +138,7 @@ then
 fi
 
 ts=`date +%Y-%m-%d-%H.%M.%S`
-log_file_name=/opt/logs/${namespace}-automation-$ts.log
+log_file_name=./${namespace}-automation-$ts.log
 echo "Starting the script - `date`" >> ${log_file_name}
 
 while [[ ${cnt} -le ${run_count} ]]    
